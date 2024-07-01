@@ -21,57 +21,59 @@
 
         h1 {
             font-size: 36px;
-			font-family:'Comic Sans MS';
+            font-family: 'Comic Sans MS';
             margin: 0;
         }
 
         nav {
             background-color: #ffb6c1;
         }
+
         nav ul {
-			font-family: 'Comic Sans MS';
+            font-family: 'Comic Sans MS';
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
             justify-content: center;
         }
+
         nav li {
             margin: 10px 20px;
         }
+
         nav a {
             text-decoration: none;
             color: #000;
         }
-		
+
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #ffe4b5;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-			display: flex;
-			flex-direction: column;
-			align-items: center; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .recipe {
-			font-family: 'Comic Sans MS';
+            font-family: 'Comic Sans MS';
             margin: 20px 0;
             padding: 20px;
             background-color: #ffefd5;
             border: 1px solid #ddd;
             border-radius: 5px;
-			display: inline-block;
-			text-align: center;
-			width: 100%;
-			max-width: 700px;
+            text-align: center;
+            width: 100%;
+            max-width: 700px;
         }
 
         .recipe h2 {
             font-size: 24px;
-			color: #a94064;
+            color: #a94064;
         }
 
         .recipe p {
@@ -80,7 +82,7 @@
         }
 
         .recipe img {
-            max-width: 100%;
+            max-width: 80%;
             border-radius: 5px;
         }
 
@@ -91,103 +93,123 @@
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
+            transition: background-color 0.3s ease;
         }
 
         .recipe-button:hover {
             background-color: #db7093;
         }
-		.center {
-		  margin-left: auto;
-		  margin-right: auto;
-		}
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ffb6c1;
+            color: #000;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Lisete retseptiblogi</h1>
-		<p style="font-family:'Verdana'">r o a s t o . e e</p>
     </header>
-	<nav>
+
+    <nav>
         <ul>
             <li><a href="https://l1s3t3.github.io/">Avaleht</a></li>
             <li><a href="https://l1s3t3.github.io/blogi/">Blogi</a></li>
             <li><a href="https://l1s3t3.github.io/galerii/">Galerii</a></li>
-		</ul>
+        </ul>
     </nav>
+
     <div class="container">
-		<div class="recipe">
-		<a href="https://l1s3t3.github.io/" class="recipe-button">Tagasi avalehele</a>
-		<p><h1 style="color:#a94064">Sügisene banaanileib</h1></p>
-		<img src="banaanileib.jpg" alt="Banaanileib" width="310" height="382">
-		<p><b>Vaja läheb:</b></p>
-		<table border="1px" class="center">
-		  <tr>
-			<th>Toiduaine</th>
-			<th>Kogus</th>
-		  </tr>
-		  <tr>
-			<td><center>Fariinsuhkrut</td>
-			<td><center>100g</td>
-		  </tr>
-		  <tr>
-			<td><center>Nisujahu</td>
-			<td><center>100g</td>
-		  </tr>
-		  <tr>
-			<td><center>Kaerajahu</td>
-			<td><center>100g</td>
-		  </tr>
-		  <tr>
-			<td><center>Soodat</td>
-			<td><center>2tl</td>
-		  </tr>
-		  <tr>
-			<td><center>Soola</td>
-			<td><center>0,5tl</td>
-		  </tr>
-		  <tr>
-			<td><center>Kardemoni</td>
-			<td><center>1tl</td>
-		  </tr>
-		  <tr>
-			<td><center>Kaneeli</td>
-			<td><center>1tl</td>
-		  </tr>
-		  <tr>
-			<td><center>Vaniljesuhkrut</td>
-			<td><center>1tl</td>
-		  </tr>
-		  <tr>
-			<td><center>Munad</td>
-			<td><center>3tk</td>
-		  </tr>
-		  <tr>
-			<td><center>Võid</td>
-			<td><center>100g</td>
-		  </tr>
-		  <tr>
-			<td><center>Banaane</td>
-			<td><center>4tk</td>
-		  </tr>
-		  <tr>
-			<td><center>Šokolaadi</td>
-			<td><center>70g</td>
-		  </tr>
-		</table>
-		<p><b>Valmistamine:</b></p>
-		<p>Sega omavahel kõik kuivained.<br>
-		Klopi lahti munad.<br>
-		Sega munad ja sulavõi kuivade ainetega.<br>
-		Vajuta banaanid kahvliga katki.<br>
-		Ei ole tarvis teha püreed, võib jääda kergelt tükiline.<br>
-		Sega banaanid tainasse.<br>
-		Lisa šokolaad.<br>
-		Vooderda keeksivorm.<br>
-		Vala tainas vormi.<br>
-		Küpseta 170 kraadi juures 1 tund,<br>kuni keeksil on pruun koorik ja puutikuga küpsust<br>proovides tuleb tikk keeksist puhtalt välja.<br>
-		Lase 10 minutit vormis jahtuda, kummuta välja.</p>
-		<h2>Head isu!</h2>
-		</div>
+        <div class="recipe">
+            <a href="https://l1s3t3.github.io/" class="recipe-button">Tagasi avalehele</a>
+            <h2>Sügisene banaanileib</h2>
+            <img src="banaanileib.jpg" alt="Banaanileib">
+            <p><b>Vaja läheb:</b></p>
+            <table>
+                <tr>
+                    <th>Toiduaine</th>
+                    <th>Kogus</th>
+                </tr>
+                <tr>
+                    <td>Fariinsuhkrut</td>
+                    <td>100g</td>
+                </tr>
+                <tr>
+                    <td>Nisujahu</td>
+                    <td>100g</td>
+                </tr>
+                <tr>
+                    <td>Kaerajahu</td>
+                    <td>100g</td>
+                </tr>
+                <tr>
+                    <td>Soodat</td>
+                    <td>2tl</td>
+                </tr>
+                <tr>
+                    <td>Soola</td>
+                    <td>0,5tl</td>
+                </tr>
+                <tr>
+                    <td>Kardemoni</td>
+                    <td>1tl</td>
+                </tr>
+                <tr>
+                    <td>Kaneeli</td>
+                    <td>1tl</td>
+                </tr>
+                <tr>
+                    <td>Vaniljesuhkrut</td>
+                    <td>1tl</td>
+                </tr>
+                <tr>
+                    <td>Munad</td>
+                    <td>3tk</td>
+                </tr>
+                <tr>
+                    <td>Võid</td>
+                    <td>100g</td>
+                </tr>
+                <tr>
+                    <td>Banaane</td>
+                    <td>4tk</td>
+                </tr>
+                <tr>
+                    <td>Šokolaadi</td>
+                    <td>70g</td>
+                </tr>
+            </table>
+            <p><b>Valmistamine:</b></p>
+            <p>Sega omavahel kõik kuivained.<br>
+            Klopi lahti munad.<br>
+            Sega munad ja sulavõi kuivade ainetega.<br>
+            Vajuta banaanid kahvliga katki.<br>
+            Ei ole tarvis teha püreed, võib jääda kergelt tükiline.<br>
+            Sega banaanid tainasse.<br>
+            Lisa šokolaad.<br>
+            Vooderda keeksivorm.<br>
+            Vala tainas vormi.<br>
+            Küpseta 170 kraadi juures 1 tund, kuni keeksil on pruun koorik ja puutikuga küpsust proovides tuleb tikk keeksist puhtalt välja.<br>
+            Lase 10 minutit vormis jahtuda, kummuta välja.</p>
+            <h2>Head isu!</h2>
+        </div>
     </div>
 </body>
 </html>
